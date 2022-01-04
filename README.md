@@ -1,40 +1,13 @@
-# Data Science Project Template
+# MTG Card Price Predictions
 
-Template adapted from [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/)
+In this project, prices of cards from the game Magic the Gathering will be predicted based on a model trained on characteristics of cards that have been released prior.
 
 
 
-## Convention
+## Methods
 
-Following this directory structure
-```
-|--project_name                           <- Project root level that is checked into github
-  |--project                              <- Project folder
-    |--README.md                          <- Top-level README for developers
-    |--volume
-    |   |--data
-    |   |   |--external                   <- Data from third party sources
-    |   |   |--interim                    <- Intermediate data that has been transformed
-    |   |   |--processed                  <- The final model-ready data
-    |   |   |--raw                        <- The original data dump
-    |   |
-    |   |--models                         <- Trained model files that can be read into R or Python
-    |
-    |--required
-    |   |--requirements.txt               <- The required libraries for reproducing the Python environment
-    |   |--requirements.r                 <- The required libraries for reproducing the R environment
-    |
-    |
-    |--src
-    |   |
-    |   |--features                       <- Scripts for turning raw and external data into model-ready data
-    |   |   |--build_features.r
-    |   |
-    |   |--models                         <- Scripts for training and saving models
-    |   |   |--train_model.r
-    |   |
-    |
-    |
-    |
-    |--.getignore                         <- List of files not to sync with github
-```
+Using the characteristics of old Magic the Gathering cards and their prices, ridge regression using cross validation will be utilized to create models to predict prices of future cards. 
+
+Variable selection will be an imporant part of the model building process in order to make the ridge regression as accurate as it can be. 
+
+Final predictions can be found in /project/volume/data/processed/submit_ridge.csv
