@@ -11,3 +11,5 @@ Using the characteristics of old Magic the Gathering cards and their prices, rid
 Variable selection will be an imporant part of the model building process in order to make the ridge regression as accurate as it can be. 
 
 Final predictions can be found in /project/volume/data/processed/submit_ridge.csv
+
+run_project.R executes all code in the repository to make predictions.
